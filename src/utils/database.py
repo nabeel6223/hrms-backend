@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-DATABASE_URL = "mysql+mysqlconnector://temp-user:Nabeel%4099@34.45.39.20:3306/temp-db"
+DATABASE_URL = "mysql+mysqlconnector://temp-user:Nabeel%4099@10.84.0.3:3306/temp-db"
 
 engine = create_engine(
     DATABASE_URL,
@@ -10,3 +10,4 @@ engine = create_engine(
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
+
