@@ -19,11 +19,7 @@ app = FastAPI(title="Attendance Management API",root_path="/api")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://hrms-frontend1.netlify.app/",   # React (CRA)
-        "http://localhost:5173",   # React (Vite)
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],  
     allow_methods=["*"],
     allow_headers=["*"],
 )
