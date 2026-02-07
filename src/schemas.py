@@ -16,6 +16,7 @@ class AttendanceCreate(AttendanceBase):
 class AttendanceResponse(AttendanceBase):
     class Config:
         from_attributes = True
+        orm_mode = True
 
 class EmployeeResponse(BaseModel):
     id: int
